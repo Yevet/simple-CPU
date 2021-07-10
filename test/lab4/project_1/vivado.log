@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan  1 18:07:31 2021
+# Process ID: 16392
+# Current directory: C:/Users/xiang/Downloads/硬综设计资料_full_v0.04/test/lab4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19136 C:\Users\xiang\Downloads\硬综设计资料_full_v0.04\test\lab4\project_1\project_1.xpr
+# Log file: C:/Users/xiang/Downloads/硬综设计资料_full_v0.04/test/lab4/project_1/vivado.log
+# Journal file: C:/Users/xiang/Downloads/硬综设计资料_full_v0.04/test/lab4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/xiang/Downloads/硬综设计资料_full_v0.04/test/lab4/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/GithubRepo/CO-lab-material-CQU/test/lab4/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'inst_ram_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'data_ram_synth_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/xiang/Downloads/硬综设计资料_full_v0.04/test/lab4/project_1/project_1.ip_user_files', nor could it be found using path 'D:/GithubRepo/CO-lab-material-CQU/test/lab4/project_1/project_1.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 705.090 ; gain = 77.133
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  1 18:08:23 2021...

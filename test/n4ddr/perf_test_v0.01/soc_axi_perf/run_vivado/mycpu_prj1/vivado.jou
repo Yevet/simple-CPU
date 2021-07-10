@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan  8 11:02:50 2021
+# Process ID: 16316
+# Current directory: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26360 C:\Users\xiang\Downloads\full_v0.04\test\n4ddr\perf_test_v0.01\soc_axi_perf\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/defines_ascii.vh C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/defines.vh}
+add_files -norecurse {C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ImmShift.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/cp0_reg.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/RegHILO.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/axi_interface.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/mips.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/hazard.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Comparer.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/DataPath.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PCAdd.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ALU.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/RegHeap.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PC.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Imm_Extend.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ALU_Decoder.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Div_32x32.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MUL.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/simfile.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Controller.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MainDecoder.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/InstAsciiDecoder.v C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/exception.v}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close [ open C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/i_cache.v w ]
+add_files C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/i_cache.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/d_cache.v w ]
+add_files C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/d_cache.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/d_chche.v w ]
+add_files C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/d_chche.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

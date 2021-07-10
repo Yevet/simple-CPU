@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jan  6 22:24:03 2021
+# Process ID: 17492
+# Current directory: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14764 C:\Users\xiang\Downloads\full_v0.04\test\n4ddr\func_test_v0.01\soc_sram_func\run_vivado\project_1\project_1.xpr
+# Log file: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/vivado.log
+# Journal file: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/defines.vh
+add_files -norecurse {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/flopr.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/hazard.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/hilo_reg.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/flopenr.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/div_state.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/sl2.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/exception.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/datapath.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/mips.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/cp0_reg.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/maindec.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/top.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/aludec.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/exceptpc.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/memsel.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/pc.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/alu.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/mux4.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/mux3.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/mux2.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/regfile.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/signext.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/flopenrc.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/controller.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/adder.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/div.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/eqcmp.v C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/rtl/myCPU/floprc.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

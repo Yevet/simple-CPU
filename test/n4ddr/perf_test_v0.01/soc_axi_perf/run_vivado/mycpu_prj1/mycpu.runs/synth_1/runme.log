@@ -1,0 +1,146 @@
+
+*** Running vivado
+    with args -log soc_axi_lite_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_axi_lite_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source soc_axi_lite_top.tcl -notrace
+Command: synth_design -top soc_axi_lite_top -part xc7a100tcsg324-1 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26260 
+WARNING: [Synth 8-2306] macro CP0_REG_CAUSE redefined [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/defines_ascii.vh:191]
+WARNING: [Synth 8-2306] macro CP0_REG_CAUSE redefined [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/defines.vh:269]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 813.887 ; gain = 243.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_axi_lite_top' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:65]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27360-DESKTOP-SUVK77O/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-27360-DESKTOP-SUVK77O/realtime/clk_pll_stub.v:5]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:108]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/mips.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstAsciiDecoder' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/InstAsciiDecoder.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/InstAsciiDecoder.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'InstAsciiDecoder' (2#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/InstAsciiDecoder.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Controller.v:27]
+INFO: [Synth 8-6157] synthesizing module 'MainDecoder' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MainDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MainDecoder' (3#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MainDecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ALU_Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (4#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ALU_Decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg' (5#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg__parameterized0' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg__parameterized0' (5#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg__parameterized1' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg__parameterized1' (5#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (6#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Controller.v:27]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/DataPath.v:31]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PC.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCAdd' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PCAdd.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PCAdd' (8#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PCAdd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RegHeap' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/RegHeap.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegHeap' (9#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/RegHeap.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_21' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_21' (10#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Comparer' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Comparer.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Comparer' (11#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Comparer.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Imm_Extend' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Imm_Extend.v:22]
+	Parameter INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Imm_Extend' (12#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Imm_Extend.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ImmShift' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ImmShift.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ImmShift' (13#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ImmShift.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux_21__parameterized0' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+	Parameter DATA_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_21__parameterized0' (13#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_41' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_41' (14#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (15#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUL' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MUL.v:27]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MUL.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'MUL' (16#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/MUL.v:27]
+INFO: [Synth 8-6157] synthesizing module 'DIV' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Div_32x32.v:23]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Div_32x32.v:71]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Div_32x32.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'DIV' (17#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Div_32x32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegHILO' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/RegHILO.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegHILO' (18#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/RegHILO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_41__parameterized0' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v:22]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_41__parameterized0' (18#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux_21__parameterized1' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_21__parameterized1' (18#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_41__parameterized1' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_41__parameterized1' (18#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_41.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux_21__parameterized2' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_21__parameterized2' (18#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Mux_21.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Imm_Extend__parameterized0' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Imm_Extend.v:22]
+	Parameter INPUT_WIDTH bound to: 8 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Imm_Extend__parameterized0' (18#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/Imm_Extend.v:22]
+INFO: [Synth 8-6157] synthesizing module 'exception' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/exception.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exception' (19#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/exception.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/cp0_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (20#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/cp0_reg.v:23]
+WARNING: [Synth 8-7023] instance 'CP0' of module 'cp0_reg' has 21 connections declared, but only 20 given [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/DataPath.v:484]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg__parameterized2' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg__parameterized2' (20#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg__parameterized3' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg__parameterized3' (20#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg__parameterized4' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg__parameterized4' (20#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/hazard.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (21#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/hazard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PipeReg__parameterized5' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PipeReg__parameterized5' (21#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/PipeReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (22#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/DataPath.v:31]
+INFO: [Synth 8-6157] synthesizing module 'i_cache' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/i_cache.v:22]
+	Parameter A_WIDTH bound to: 32 - type: integer 
+	Parameter C_INDEX bound to: 6 - type: integer 
+	Parameter T_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'i_cache' (23#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/i_cache.v:22]
+INFO: [Synth 8-6157] synthesizing module 'd_chche' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/d_chche.v:23]
+	Parameter A_WIDTH bound to: 32 - type: integer 
+	Parameter C_INDEX bound to: 6 - type: integer 
+	Parameter T_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'd_chche' (24#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/d_chche.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axi_interface' [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/axi_interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi_interface' (25#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/axi_interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (26#1) [C:/Users/xiang/Desktop/func_test_v0.03/func_test_v0.03/soc_axi_func/rtl/myCPU/mips.v:23]
+ERROR: [Synth 8-448] named port connection 'ext_int' does not exist for instance 'u_cpu' of module 'mycpu_top' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:320]
+WARNING: [Synth 8-689] width (4) of port connection 'arlen' does not match port width (8) of module 'mycpu_top' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:327]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v:34]
+ERROR: [Synth 8-6156] failed synthesizing module 'axi_wrap' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v:34]
+ERROR: [Synth 8-6156] failed synthesizing module 'soc_axi_lite_top' [C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 882.070 ; gain = 312.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 7 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  8 11:14:51 2021...

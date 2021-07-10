@@ -1,0 +1,132 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jan  6 22:39:28 2021
+| Host         : DESKTOP-SUVK77O running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+| Design       : soc_lite_top
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    54 |
+|    Minimum number of control sets                        |    54 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   103 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    54 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             325 |          142 |
+| No           | No                    | Yes                    |             529 |          166 |
+| No           | Yes                   | No                     |             173 |           51 |
+| Yes          | No                    | No                     |             104 |           32 |
+| Yes          | No                    | Yes                    |             386 |          132 |
+| Yes          | Yes                   | No                     |             772 |          227 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|             Clock Signal             |             Enable Signal            |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|  u_cpu/mips/dp/h/forwardbD_reg[0]/G0 |                                      |                                      |                1 |              1 |
+|  u_cpu/mips/dp/h/forwardbD_reg[1]/G0 |                                      |                                      |                1 |              1 |
+|  u_cpu/mips/c/md/q_reg[18]_1[0]      |                                      |                                      |                1 |              2 |
+|  u_cpu/mips/c/md/q_reg[18]_0[0]      |                                      |                                      |                1 |              2 |
+|  n_0_3810_BUFG                       |                                      |                                      |                2 |              2 |
+|  u_cpu/mips/c/regM/q_reg[3]_0[0]     |                                      |                                      |                2 |              4 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r3W/q_reg[0]_1[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                3 |              4 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r8W/q_reg[1]_1[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                3 |              5 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/d/cnt[5]_i_1_n_6       |                                      |                2 |              6 |
+|  u_cpu/mips/dp/r2D/q_reg[30]_1[0]    |                                      |                                      |                5 |              8 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[3]_0[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                2 |              8 |
+|  u_cpu/mips/dp/r2D/q_reg[30]_0[0]    |                                      | u_cpu/mips/dp/r2D/AR[0]              |                7 |             20 |
+|  pll.clk_pll/inst/cpu_clk            |                                      | confreg/step0_count0                 |                5 |             20 |
+|  pll.clk_pll/inst/cpu_clk            |                                      | confreg/step1_count0                 |                5 |             20 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/d/ready_o_reg_0        | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               14 |             26 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/d/dividend[31]_i_2_n_6 | u_cpu/mips/dp/d/dividend[31]_i_1_n_6 |               19 |             31 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r3W/q_reg[0]_2         | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               16 |             31 |
+|  n_4_3543_BUFG                       |                                      |                                      |               17 |             32 |
+|  n_3_3538_BUFG                       |                                      |                                      |               21 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[6]_3[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r5M/q_reg[13][0]       | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               12 |             32 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r2D/q_reg[24]_36[0]    | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               10 |             32 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/d/dividend[64]_i_2_n_6 | u_cpu/mips/dp/d/dividend[64]_i_1_n_6 |                8 |             32 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r8W/cpu_resetn_reg[0]  |                                      |               13 |             32 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r3W/q_reg[2]_0[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               15 |             32 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r3W/E[0]               | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               18 |             32 |
+| ~n_0_3810_BUFG                       | u_cpu/mips/c/regW/q_reg[2]_0[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               12 |             32 |
+| ~n_0_3810_BUFG                       | u_cpu/mips/c/regW/q_reg[3]_0[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               13 |             32 |
+|  n_1_128_BUFG                        |                                      |                                      |               18 |             32 |
+|  n_5_3632_BUFG                       |                                      |                                      |               10 |             32 |
+|  n_2_1765_BUFG                       |                                      |                                      |               21 |             32 |
+|  pll.clk_pll/inst/timer_clk          |                                      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/cpu_resetn_reg[0]  |                                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[14]_0[0]     | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                6 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[2]_1[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[2]_3[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                9 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[6]_2[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                5 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[6]_1[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                4 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[3]_1[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                6 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[6]_4[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[3]_2[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                6 |             32 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[6]_0[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                8 |             32 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/d/divisor[31]_i_1_n_6  |                                      |                9 |             34 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[2]_0[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                6 |             34 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/q_reg[2]_2[0]      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |                7 |             34 |
+|  pll.clk_pll/inst/cpu_clk            |                                      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               16 |             46 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/dp/r2M/E[0]               | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               11 |             48 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/d/result_o[63]_i_1_n_6 | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               14 |             65 |
+|  pll.clk_pll/inst/timer_clk          |                                      |                                      |               19 |             67 |
+|  pll.clk_pll/inst/cpu_clk            |                                      |                                      |               23 |             78 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r5M/E[0]               | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               32 |             96 |
+|  pll.clk_pll/inst/cpu_clk            | u_cpu/mips/c/regW/we3                |                                      |               12 |             96 |
+|  n_0_3810_BUFG                       | u_cpu/mips/dp/r2D/E[0]               | u_cpu/mips/dp/cp0/cpu_resetn_reg     |               76 |            232 |
+|  n_0_3810_BUFG                       |                                      | u_cpu/mips/dp/cp0/cpu_resetn_reg     |              176 |            564 |
++--------------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+
+

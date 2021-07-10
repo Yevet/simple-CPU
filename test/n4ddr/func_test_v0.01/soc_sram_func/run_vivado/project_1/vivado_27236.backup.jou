@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jan  6 23:47:10 2021
+# Process ID: 27236
+# Current directory: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16156 C:\Users\xiang\Downloads\full_v0.04\test\n4ddr\func_test_v0.01\soc_sram_func\run_vivado\project_1\project_1.xpr
+# Log file: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/vivado.log
+# Journal file: C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/xiang/Downloads/full_v0.04/test/n4ddr/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/impl_1/soc_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [lindex [get_cfgmem_parts {28f00am29ew-bpi-x16}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
